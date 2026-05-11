@@ -29,37 +29,3 @@ body {
   line-height: 1.7;
   letter-spacing: 0.3px;
 }
-
-/* Focus States - FIXED
-:focus-visible {
-  outline: 3px solid #1b5e3f;
-  outline-offset: 2px;
-  border-radius: 4px;
-} */
-
-/* Selection */
-/* ::selection {
-  background-color: #1b5e3f;
-  color: white;
-} */
-
-/* Reduced Motion */
-/* @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-} */
-
-/* Input Focus States */
-/* input:focus,
-textarea:focus,
-select:focus {
-  outline: 3px solid #1b5e3f;
-  outline-offset: 2px;
-  border-color: #1b5e3f;
-} */
