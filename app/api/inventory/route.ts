@@ -1,5 +1,16 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
+const LOG = {
+  info: (msg: string, data?: any) =>
+    console.log(`✅ [ROUTE] ${msg}`, data || ""),
+  error: (msg: string, data?: any) =>
+    console.error(`❌ [ROUTE] ${msg}`, data || ""),
+  debug: (msg: string, data?: any) =>
+    console.log(`🔍 [ROUTE] ${msg}`, data || ""),
+};
+
 const DEFAULT_IMAGE_URL = "/images/mock-car.jpg";
 
 function mapTransmissionType(t: string) {
@@ -12,50 +23,69 @@ function mapFuelType(f?: string) {
   return f;
 }
 
-export const dynamic = "force-dynamic";
-
 export async function GET(request: Request) {
+  const requestId = Math.random().toString(36).substring(7);
+  LOG.info(`[${requestId}] 🚀 Next.js API route called`);
+
   const { searchParams } = new URL(request.url);
-  const limit = searchParams.get("limit") || "50";
+  const limit = searchParams.get("limit") || "6";
   const sort = searchParams.get("sort") || "newest";
 
   const apiKey = process.env.CARS_API_KEY;
 
   if (!apiKey) {
+    LOG.error(`[${requestId}] MISSING: CARS_API_KEY in environment variables!`);
     return NextResponse.json(
-      { success: false, message: "API Key is missing" },
+      {
+        success: false,
+        message: "API Key is missing. Add CARS_API_KEY to Vercel and Redeploy.",
+      },
       { status: 401 },
     );
   }
 
+  LOG.debug(`[${requestId}] Environment variables OK`, {
+    keyPrefix: apiKey.substring(0, 10) + "...",
+  });
+
   try {
     const params = new URLSearchParams();
     params.append("page_size", limit);
-    // You could map 'sort' to the Carapis equivalent if available
 
     const url = `https://api.carapis.com/apix/catalog_private/vehicles/?${params.toString()}`;
+    LOG.info(`[${requestId}] Calling external API`, { url });
+
+    const startTime = Date.now();
     const response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
+        "User-Agent": "CarFromKoreaa-API/1.0 (NextJS-Backend)",
+        Accept: "application/json",
       },
-      next: { revalidate: 300 },
+    });
+
+    LOG.info(`[${requestId}] External API response`, {
+      status: response.status,
+      duration: Date.now() - startTime,
     });
 
     if (!response.ok) {
-      console.error(`Carapis API error: ${response.status}`);
-      return NextResponse.json({
-        success: false,
-        data: [],
-        pagination: { total: 0, page: 1, limit: Number(limit), pages: 1 },
-      });
+      const errText = await response.text();
+      LOG.error(`[${requestId}] External API error`, errText);
+      return NextResponse.json(
+        {
+          success: false,
+          message: `External API failed: ${response.status}`,
+          data: [],
+        },
+        { status: response.status },
+      );
     }
 
     const apiData = await response.json();
-    console.log("Fetched Cars Data:");
-    console.log(JSON.stringify(apiData, null, 2));
+    LOG.debug(`[${requestId}] JSON parsed successfully`);
 
-    // Transform Carapis response to our internal format
     const vehicles = (apiData.results || []).map(
       (v: Record<string, unknown>) => {
         const vBrand = v.brand as Record<string, string> | string;
@@ -87,6 +117,10 @@ export async function GET(request: Request) {
       },
     );
 
+    LOG.info(
+      `[${requestId}] ✅ SUCCESS: Fetched ${vehicles.length} cars globally`,
+    );
+
     return NextResponse.json({
       success: true,
       data: vehicles,
@@ -98,7 +132,7 @@ export async function GET(request: Request) {
       },
     });
   } catch (error) {
-    console.error("Error fetching inventory:", error);
+    LOG.error(`[${requestId}] ❌ UNHANDLED ERROR`, error);
     return NextResponse.json(
       { success: false, data: [], message: "Internal Server Error" },
       { status: 500 },
