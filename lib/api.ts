@@ -1,6 +1,6 @@
 import { Car, InventoryResponse } from "@/types/inventory";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const API_BASE_URL = "/api";
 
 export async function fetchInventory(
   limit: number = 3,
