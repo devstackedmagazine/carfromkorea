@@ -1,7 +1,3 @@
-/**
- * Car Inventory Data Type
- * Matches API response structure
- */
 export interface Car {
   id: string;
   make: string;
