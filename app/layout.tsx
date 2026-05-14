@@ -16,19 +16,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Threads Studio | Premium Car Showroom",
+  title: "CarFromKorea | Premium Car Showroom",
   description:
-    "Discover luxury vehicles with transparent pricing, flexible financing, and exceptional customer service. Find your perfect drive at Threads Studio.",
+    "Discover luxury vehicles with transparent pricing, flexible financing, and exceptional customer service. Find your perfect drive at CarFromKorea.",
   keywords: [
     "car dealership",
     "luxury vehicles",
     "car financing",
     "premium cars",
   ],
-  authors: [{ name: "Threads Studio" }],
+  authors: [{ name: "CarFromKorea" }],
   openGraph: {
-    title: "Threads Studio | Premium Car Showroom",
-    description: "Find your perfect vehicle with Threads Studio",
+    title: "CarFromKorea | Premium Car Showroom",
+    description: "Find your perfect vehicle with CarFromKorea",
     type: "website",
   },
 };
@@ -38,16 +38,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    return (
+  return (
     <html
       lang="en"
       // className={"scroll-smooth", "font-sans", geistMono.variable}
       suppressHydrationWarning
     >
-      <body className={`${montserrat.variable} ${geistMono.variable} antialiased`}>
-        <main className="overflow-clip">
-          {children}
-        </main>
+      <body
+        className={`${montserrat.variable} ${geistMono.variable} antialiased`}
+      >
+        <main className="overflow-clip">{children}</main>
       </body>
     </html>
   );
