@@ -22,19 +22,19 @@ export default function CTASection() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link href="/cars" className="block w-full sm:w-auto">
                 <Button
-                  className="w-full sm:w-auto px-8 py-3 rounded-lg font-semibold text-lg transition-all hover:shadow-lg hover:scale-105 active:scale-95 bg-light-emerald text-charcoal-gray"
+                  className="hover:shadow-lg hover:scale-105 active:scale-95 bg-light-emerald text-charcoal-gray"
                   variant="luxe"
                 >
                   View Inventory
                 </Button>
               </Link>
 
-              <Link href="/contact" className="block w-full sm:w-auto">
+              <Link href="/FAQ" className="block w-full sm:w-auto">
                 <Button
-                  className="w-full sm:w-auto px-8 py-3 rounded-lg font-semibold text-lg transition-all border-2 hover:shadow-lg border-soft-blue text-soft-blue hover:bg-soft-blue/10"
+                  className="border-soft-blue text-soft-blue hover:shadow-lg hover:scale-105 hover:bg-soft-blue/30 hover:text-white"
                   variant="outline"
                 >
-                  Contact Concierge
+                  FAQ Answers
                 </Button>
               </Link>
             </div>
