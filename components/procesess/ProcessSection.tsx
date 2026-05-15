@@ -19,26 +19,26 @@ interface ProcessStepData {
 const processSteps: ProcessStepData[] = [
   {
   number: 1,
-  title: "Car Selection",
+  title: "Zgjedhja e Makinës",
   description:
-    "The first step is choosing the ideal car according to your wishes and needs.",
-  imageAlt: "Car Selection",
+    "Hapi i parë është zgjedhja e makinës ideale sipas dëshirave dhe nevojave tuaja.",
+  imageAlt: "Zgjedhja e Makinës",
   imageUrl: step1Image,
 },
 {
   number: 2,
-  title: "Professional Inspection",
+  title: "Inspektimi Profesional",
   description:
-    "The inspection is carried out by our professional team. The vehicle is checked in detail to ensure the highest quality.",
-  imageAlt: "Professional Inspection",
+    "Inspektimi kryhet nga ekipi ynë profesional. Automjeti kontrollohet në detaje për të siguruar cilësinë më të lartë.",
+  imageAlt: "Inspektimi Profesional",
   imageUrl: step2Image,
 },
 {
   number: 3,
-  title: "Purchase and Payment",
+  title: "Blerja dhe Pagesa",
   description:
-    "After the inspection is completed and if the client is satisfied with the condition of the vehicle, the vehicle is purchased. Full payment is made to the company's official account. Korea Auto Imports Prishtina is a company registered in Kosovo. All payments are made to our account at Raiffeisen Bank.",
-  imageAlt: "Purchase & Payment",
+    "Pas përfundimit të inspektimit dhe nëse klienti është i kënaqur me gjendjen e automjetit, automjeti blihet. Pagesa e plotë bëhet në llogarinë zyrtare të kompanisë. Korea Auto Imports Prishtina është një kompani e regjistruar në Kosovë. Të gjitha pagesat bëhen në llogarinë tonë në Bankë.",
+  imageAlt: "Blerja dhe Pagesa",
   imageUrl: step3Image,
 },
 ];
@@ -55,11 +55,11 @@ export default function ProcessSection() {
       >
         <motion.div variants={variants.fadeInUp} className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Our 5-Step Process
+            Procesi Ynë në 3 Hapa
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            We make importing your dream car from Korea easy and hassle-free.
-            Here’s how it works:
+            Ne e bëjmë importimin e makinës suaj të ëndrrave nga Korea të lehtë dhe pa stres.
+            Ja si funksionon:
           </p>
         </motion.div>
 

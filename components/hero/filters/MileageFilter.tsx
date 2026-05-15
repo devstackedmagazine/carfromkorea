@@ -11,13 +11,13 @@ export default function MileageFilter({
   onChange,
 }: MileageFilterProps) {
   const options = [
-    { label: "Any (No max)", value: 0 },
-    { label: "Under 10,000 km", value: 10000 },
-    { label: "Under 25,000 km", value: 25000 },
-    { label: "Under 50,000 km", value: 50000 },
-    { label: "Under 100,000 km", value: 100000 },
-    { label: "Under 150,000 km", value: 150000 },
-    { label: "Under 200,000 km", value: 200000 },
+    { label: "Çdo (Pa maksimum)", value: 0 },
+    { label: "Nën 10,000 km", value: 10000 },
+    { label: "Nën 25,000 km", value: 25000 },
+    { label: "Nën 50,000 km", value: 50000 },
+    { label: "Nën 100,000 km", value: 100000 },
+    { label: "Nën 150,000 km", value: 150000 },
+    { label: "Nën 200,000 km", value: 200000 },
   ];
 
   return (
@@ -36,13 +36,13 @@ export default function MileageFilter({
           <circle cx="12" cy="12" r="10" />
           <path d="M12 6v6l4 2" />
         </svg>
-        MAX MILEAGE (km)
+        KILOMETRAZHI MAKSIMAL (km)
       </label>
       <Dropdown
         options={options}
         value={mileageMax}
         onChange={onChange}
-        placeholder="Select max mileage"
+        placeholder="Zgjidh kilometrazhin maksimal"
       />
     </div>
   );

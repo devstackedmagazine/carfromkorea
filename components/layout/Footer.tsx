@@ -27,18 +27,18 @@ interface SocialLink {
 }
 
 const quickLinks: FooterLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Browse Vehicles", href: "/inventory" },
-  { label: "About Us", href: "/about" },
+  { label: "Ballina", href: "/" },
+  { label: "Shfleto Automjetet", href: "/inventory" },
+  { label: "Rreth Nesh", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Kontakt", href: "/contact" },
 ];
 
 const companyLinks: FooterLink[] = [
-  { label: "Services", href: "/services" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Financing", href: "/financing" },
-  { label: "Testimonials", href: "/testimonials" },
+  { label: "Shërbimet", href: "/services" },
+  { label: "Si Funksionon", href: "/how-it-works" },
+  { label: "Financimi", href: "/financing" },
+  { label: "Dëshmitë", href: "/testimonials" },
   { label: "FAQ", href: "/faq" },
 ];
 
@@ -50,9 +50,9 @@ const socialLinks: SocialLink[] = [
 ];
 
 const legalLinks: FooterLink[] = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms of Service", href: "/terms" },
-  { label: "Cookie Policy", href: "/cookies" },
+  { label: "Politika e Privatësisë", href: "/privacy" },
+  { label: "Kushtet e Përdorimit", href: "/terms" },
+  { label: "Politika e Cookies", href: "/cookies" },
 ];
 
 const staggerVariants = {
@@ -153,7 +153,7 @@ export default function Footer() {
               CARFROMKOREA
             </h2>
             <p className="text-off-white/70 text-sm mt-3 leading-relaxed">
-              Premium automotive masterpieces for the discerning collector
+              Vepra arti premium automobilistike për koleksionistin e dalluar
             </p>
             <p className="text-off-white/50 text-xs mt-2 font-medium">
               Est. 1984
@@ -167,12 +167,12 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <motion.div variants={fadeUpVariants}>
-            <LinkColumn title="Quick Links" links={quickLinks} />
+            <LinkColumn title="Lidhje të Shpejta" links={quickLinks} />
           </motion.div>
 
           {/* Column 3: Company */}
           <motion.div variants={fadeUpVariants}>
-            <LinkColumn title="Company" links={companyLinks} />
+            <LinkColumn title="Kompania" links={companyLinks} />
           </motion.div>
 
           {/* Column 4: Contact & Newsletter */}
@@ -180,7 +180,7 @@ export default function Footer() {
             {/* Contact */}
             <div>
               <h3 className="text-off-white font-semibold text-lg mb-4">
-                Contact
+                Kontakti
               </h3>
               <ul className="flex flex-col gap-3 text-sm text-off-white/70">
                 <li className="flex items-center gap-3">
@@ -205,14 +205,14 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <MapPin size={16} className="text-rich-green shrink-0" />
-                  <span>123 Luxury Lane, Seoul, Korea</span>
+                    <span>123 Rruga Luksoze, Seul, Kore</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Clock size={16} className="text-rich-green shrink-0 mt-0.5" />
                   <span>
-                    Mon-Fri 9AM-6PM<br />
-                    Sat 10AM-4PM<br />
-                    Sun Closed
+                    Hën-Pre 9AM-6PM<br />
+                    Sht 10AM-4PM<br />
+                    Die Mbyllur
                   </span>
                 </li>
               </ul>
@@ -225,7 +225,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-off-white/50">
-          <p>&copy; 2024 CarFromKorea. All rights reserved.</p>
+          <p>&copy; 2024 CarFromKorea. Të gjitha të drejtat e rezervuara.</p>
           <nav aria-label="Legal links" className="flex items-center gap-4">
             {legalLinks.map((link, i) => (
               <span key={link.href} className="flex items-center gap-4">

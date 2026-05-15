@@ -10,21 +10,28 @@ import { variants } from "@/lib/motion-presets";
 
 export default function Header() {
   return (
-    <motion.header
-      initial="hidden"
-      animate="visible"
-      variants={variants.fadeInDown}
+    <header
+      // initial="hidden"
+      // animate="visible"
+      // variants={variants.fadeInDown}
       className="px-[20px] sm:px-[50px] lg:px-[80px] xl:px-[100px] flex justify-between items-center h-28 bg-background relative z-[100]"
     >
-      <h3 className="font-bold text-off-white">CARFROMKOREA</h3>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={variants.fadeInDown}
+        className="w-full h-full flex justify-between items-center"
+      >
+        <h3 className="font-bold text-off-white">CARFROMKOREA</h3>
 
-      <Navigation />
+        <Navigation />
 
-      <Link href="/inventory" className="hidden lg:block">
-        <Button variant="luxe" size="md">
-          Explore Collection
-        </Button>
-      </Link>
-    </motion.header>
+        <Link href="/inventory" className="hidden lg:block">
+          <Button variant="luxe" size="md">
+            Shiko Koleksionin
+          </Button>
+        </Link>
+      </motion.div>
+    </header>
   );
 }

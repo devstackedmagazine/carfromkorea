@@ -22,7 +22,7 @@ export default function FAQCategory({ category }: FAQCategoryProps) {
         
         {/* Visual indicator / Count badge */}
         <span className="text-xs sm:text-sm font-medium px-3 py-1 bg-[#1A1F26] text-gray-300 border border-[#2A2E34] rounded-full">
-          {category.items.length} Questions
+          {category.items.length} Pyetje
         </span>
       </div>
       

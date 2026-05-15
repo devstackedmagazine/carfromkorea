@@ -16,19 +16,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CarFromKorea | Premium Car Showroom",
+  title: "CarFromKorea | Sallon Premium i Automjeteve",
   description:
-    "Discover luxury vehicles with transparent pricing, flexible financing, and exceptional customer service. Find your perfect drive at CarFromKorea.",
+    "Zbuloni automjete luksoze me çmime transparente, financim fleksibël dhe shërbim të jashtëzakonshëm ndaj klientit. Gjeni makinën tuaj të përsosur në CarFromKorea.",
   keywords: [
-    "car dealership",
-    "luxury vehicles",
-    "car financing",
-    "premium cars",
+    "tregtia e makinave",
+    "automjete luksoze",
+    "financim makinash",
+    "makina premium",
   ],
   authors: [{ name: "CarFromKorea" }],
   openGraph: {
-    title: "CarFromKorea | Premium Car Showroom",
-    description: "Find your perfect vehicle with CarFromKorea",
+    title: "CarFromKorea | Sallon Premium i Automjeteve",
+    description: "Gjeni automjetin tuaj të përsosur me CarFromKorea",
     type: "website",
   },
 };

@@ -59,7 +59,7 @@ export default function FeaturedInventory() {
         {/* Error State */}
         {error && !loading && (
           <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-6 text-red-400 text-center">
-            <p className="font-semibold">Failed to load inventory</p>
+            <p className="font-semibold">Dështoi ngarkimi i inventarit</p>
             <p className="text-sm mt-2">{error}</p>
           </div>
         )}
@@ -82,7 +82,7 @@ export default function FeaturedInventory() {
             variants={variants.fadeInUp}
             className="text-center py-20"
           >
-            <p className="text-white text-lg">No vehicles found</p>
+            <p className="text-white text-lg">Nuk u gjetën automjete</p>
           </motion.div>
         )}
 
@@ -92,7 +92,7 @@ export default function FeaturedInventory() {
           className="flex justify-center mt-16"
         >
           <button className="px-8 py-[18px] border border-[#86e2b4] text-white text-xs font-bold uppercase tracking-wider rounded-[4px] hover:bg-[#86e2b4] hover:text-[#111111] transition-all">
-            VIEW FULL INVENTORY
+            SHIKO INVENTARIN E PLOTË
           </button>
         </motion.div>
       </motion.div>
