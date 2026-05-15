@@ -5,6 +5,8 @@ import ProcessStep from "./ProcessStep";
 import step1Image from "@/public/images/step1Image.png";
 import step2Image from "@/public/images/step2Image.png";
 import step3Image from "@/public/images/step3Image.png";
+import { motion } from "framer-motion";
+import { variants } from "@/lib/motion-presets";
 
 interface ProcessStepData {
   number: number;
@@ -43,9 +45,15 @@ const processSteps: ProcessStepData[] = [
 
 export default function ProcessSection() {
   return (
-    <section className="bg-dark-gray py-20 px-8 sm:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+    <section className="bg-dark-gray py-20 px-8 sm:px-12 lg:px-20 overflow-hidden">
+      <motion.div 
+        className="max-w-7xl mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={variants.staggerContainer}
+      >
+        <motion.div variants={variants.fadeInUp} className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Our 5-Step Process
           </h2>
@@ -53,18 +61,22 @@ export default function ProcessSection() {
             We make importing your dream car from Korea easy and hassle-free.
             Here’s how it works:
           </p>
-        </div>
+        </motion.div>
 
         <div className="space-y-16">
           {processSteps.map((step, index) => (
-            <ProcessStep
-              key={step.number}
-              step={step}
-              isEven={index % 2 === 0}
-            />
+            <motion.div 
+              key={step.number} 
+              variants={index % 2 === 0 ? variants.fadeInLeft : variants.fadeInRight}
+            >
+              <ProcessStep
+                step={step}
+                isEven={index % 2 === 0}
+              />
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -2,12 +2,20 @@
 
 import Link from "next/link";
 import Button from "../ui/Button";
+import { motion } from "framer-motion";
+import { variants } from "@/lib/motion-presets";
 
 export default function CTASection() {
   return (
-    <section className="py-20 px-8 sm:px-12 lg:px-20 bg-[#111415]">
+    <section className="py-20 px-8 sm:px-12 lg:px-20 bg-[#111415] overflow-hidden">
       <div className="max-w-4xl mx-auto">
-        <div className="relative rounded-2xl p-12 lg:p-16 overflow-hidden bg-muted-blue">
+        <motion.div 
+          className="relative rounded-2xl p-12 lg:p-16 overflow-hidden bg-muted-blue"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={variants.fadeInUp}
+        >
           <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl opacity-40 bg-light-emerald" />
 
           <div className="relative z-10 text-center">
@@ -39,7 +47,7 @@ export default function CTASection() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,15 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useInventory } from './hooks/useInventory';
-import InventoryHeader from './InventoryHeader';
-import InventoryControls from './InventoryControls';
-import InventoryGrid from './InventoryGrid';
-import { ViewMode, SortOption } from '@/types/inventory';
+import { useState } from "react";
+import { useInventory } from "./hooks/useInventory";
+import InventoryHeader from "./InventoryHeader";
+import InventoryControls from "./InventoryControls";
+import InventoryGrid from "./InventoryGrid";
+import { ViewMode, SortOption } from "@/types/inventory";
+import { motion } from "framer-motion";
+import { variants } from "@/lib/motion-presets";
 
 export default function FeaturedInventory() {
-  const [viewMode, setViewMode] = useState<ViewMode>('grid');
-  
+  const [viewMode, setViewMode] = useState<ViewMode>("grid");
+
   const {
     cars,
     loading,
@@ -19,16 +21,23 @@ export default function FeaturedInventory() {
     favorites,
     toggleFavorite,
     isFavorite,
-  } = useInventory({ limit: 6, initialSort: 'newest' });
+  } = useInventory({ limit: 6, initialSort: "newest" });
 
   return (
-    <section className="bg-[#111111] py-20 px-8 sm:px-12 lg:px-20">
-      <div className="max-w-[1400px] mx-auto">
-        {/* Top Bar: Header + Controls */}
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8 gap-6">
+    <section className="bg-[#111111] py-20 px-8 sm:px-12 lg:px-20 relative z-10">
+      <motion.div
+        className="max-w-[1400px] mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={variants.staggerContainer}
+      >
+        <motion.div
+          variants={variants.fadeInUp}
+          className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8 gap-6"
+        >
           <InventoryHeader />
 
-          {/* Controls: View Toggle + Sort */}
           <InventoryControls
             viewMode={viewMode}
             onViewModeChange={setViewMode}
@@ -36,7 +45,7 @@ export default function FeaturedInventory() {
             onSortChange={(newSort: SortOption) => setSort(newSort)}
             totalCars={cars.length}
           />
-        </div>
+        </motion.div>
 
         {/* Loading State */}
         {loading && (
@@ -57,28 +66,36 @@ export default function FeaturedInventory() {
 
         {/* Grid/List View */}
         {!loading && !error && cars.length > 0 && (
-          <InventoryGrid
-            cars={cars}
-            viewMode={viewMode}
-            isFavorite={isFavorite}
-            onToggleFavorite={toggleFavorite}
-          />
+          <motion.div variants={variants.fadeInUp}>
+            <InventoryGrid
+              cars={cars}
+              viewMode={viewMode}
+              isFavorite={isFavorite}
+              onToggleFavorite={toggleFavorite}
+            />
+          </motion.div>
         )}
 
         {/* Empty State */}
         {!loading && !error && cars.length === 0 && (
-          <div className="text-center py-20">
+          <motion.div
+            variants={variants.fadeInUp}
+            className="text-center py-20"
+          >
             <p className="text-white text-lg">No vehicles found</p>
-          </div>
+          </motion.div>
         )}
 
         {/* View Full Inventory CTA */}
-        <div className="flex justify-center mt-16">
+        <motion.div
+          variants={variants.fadeInUp}
+          className="flex justify-center mt-16"
+        >
           <button className="px-8 py-[18px] border border-[#86e2b4] text-white text-xs font-bold uppercase tracking-wider rounded-[4px] hover:bg-[#86e2b4] hover:text-[#111111] transition-all">
             VIEW FULL INVENTORY
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

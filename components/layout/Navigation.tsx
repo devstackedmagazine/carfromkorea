@@ -9,7 +9,6 @@ import Button from "../ui/Button";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/inventory", label: "Inventory" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
   { href: "/tax-calculator", label: "Tax Calculator" },
@@ -66,8 +65,10 @@ export default function Navigation({ className }: { className?: string }) {
             {item.label}
           </Link>
         ))}
-        <Link href="/contact" className="!block sm:!hidden">
-          <Button>Get In Touch</Button>
+        <Link href="/inventory">
+          <Button variant="luxe" size="md">
+            Explore Collection
+          </Button>
         </Link>
       </div>
     </>
