@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Button from '../ui/Button';
+import Button from '../../ui/Button';
 import { motion } from 'framer-motion';
 import { variants } from '@/lib/motion-presets';
 
