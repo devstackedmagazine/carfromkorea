@@ -8,125 +8,125 @@ import { FAQCategoryData } from "./types";
 const faqData: FAQCategoryData[] = [
   {
     id: "buying-process",
-    name: "Buying Process",
+    name: "Procesi i Blerjes",
     items: [
       {
         id: 1,
-        title: "How do I purchase a car?",
-        answer: "Our purchasing process is streamlined for your convenience. You can start by reserving a vehicle online, scheduling a private consultation at our studio, or contacting our concierge team directly. From there, we handle all the paperwork digitally or in person, according to your preference."
+        title: "Si mund të blej një makinë?",
+        answer: "Procesi ynë i blerjes është i thjeshtë për lehtësinë tuaj. Mund të filloni duke rezervuar një automjet online, duke planifikuar një konsultim privat në studion tonë, ose duke kontaktuar ekipin tonë të shërbimit direkt. Më pas, ne trajtojmë të gjithë dokumentacionin në mënyrë dixhitale ose personalisht, sipas preferencës tuaj."
       },
       {
         id: 2,
-        title: "What documents do I need?",
-        answer: "To purchase a vehicle, you will need a valid driver's license, proof of insurance, and payment information. If you are financing or trading in a vehicle, you may also need proof of income, proof of residence, and your current vehicle's title or payoff information."
+        title: "Çfarë dokumentash më duhen?",
+        answer: "Për të blerë një automjet, do t'ju nevojitet një patentë shoferi e vlefshme, vërtetim sigurimi dhe informacione pagese. Nëse jeni duke financuar ose duke shkëmbyer një automjet, mund të ju nevojitet gjithashtu vërtetim i të ardhurave, vërtetim i vendbanimit dhe titulli ose informacioni i shlyerjes së automjetit tuaj aktual."
       },
       {
         id: 3,
-        title: "Can I test drive before buying?",
-        answer: "Absolutely. We encourage private test drives to ensure the vehicle meets your expectations. Due to the high value of our inventory, test drives are available by appointment only. Please contact our concierge to schedule a viewing and test drive."
+        title: "A mund ta provoj makinën para blerjes?",
+        answer: "Absolutisht. Ne inkurajojmë provat private për t'u siguruar që automjeti i plotëson pritshmëritë tuaja. Për shkak të vlerës së lartë të inventarit tonë, provat janë të mundshme vetëm me takim. Ju lutemi kontaktoni ekipin tonë për të caktuar një takim për shikim dhe provë."
       },
       {
         id: 4,
-        title: "Do you accept trade-ins?",
-        answer: "Yes, we accept premium and luxury trade-ins. Our expert appraisers will provide a competitive market valuation for your current vehicle, which can be applied directly toward your new purchase."
+        title: "A pranoni shkëmbime?",
+        answer: "Po, ne pranojmë shkëmbime premium dhe luksoze. Vlerësuesit tanë ekspertë do të ofrojnë një vlerësim konkurrues të tregut për automjetin tuaj aktual, i cili mund të aplikohet drejtpërdrejt në blerjen tuaj të re."
       },
       {
         id: 5,
-        title: "What's your return policy?",
-        answer: "We stand behind the quality of our vehicles. We offer a 7-day or 250-mile return policy (whichever comes first) on most purchases, provided the vehicle is in its original condition. Some specialty and bespoke orders may be exempt."
+        title: "Cila është politika juaj e kthimit?",
+        answer: "Ne garantojmë cilësinë e automjeteve tona. Ne ofrojmë një politikë kthimi 7-ditor ose 250 milje (cilado të vijë e para) për shumicën e blerjeve, me kusht që automjeti të jetë në gjendjen e tij origjinale. Disa porosi speciale mund të jenë të përjashtuara."
       }
     ]
   },
   {
     id: "financing-payments",
-    name: "Financing & Payments",
+    name: "Financimi dhe Pagesat",
     items: [
       {
         id: 6,
-        title: "Do you offer financing?",
-        answer: "Yes, Threads Studio partners with top-tier financial institutions to offer bespoke financing solutions tailored to your unique financial profile, including custom lease structures and traditional financing."
+        title: "A ofroni financim?",
+        answer: "Po, CarFromKorea bashkëpunon me institucione financiare të nivelit të lartë për të ofruar zgjidhje të personalizuara financimi të përshtatura për profilin tuaj unik financiar, duke përfshirë struktura të personalizuara qiraje dhe financim tradicional."
       },
       {
         id: 7,
-        title: "What are the interest rates?",
-        answer: "Interest rates are highly competitive and depend on your credit profile, the loan term, and the specific vehicle. Contact our finance team for a personalized rate quote with no impact to your credit score."
+        title: "Cilat janë normat e interesit?",
+        answer: "Normat e interesit janë shumë konkurruese dhe varen nga profili juaj i kreditit, afati i kredisë dhe automjeti specifik. Kontaktoni ekipin tonë financiar për një kuotë të personalizuar pa ndikim në rezultatin tuaj të kreditit."
       },
       {
         id: 8,
-        title: "What's the minimum down payment?",
-        answer: "While many transactions require a 10-20% down payment, we offer customized structures. In some cases, highly qualified buyers may qualify for zero down payment options."
+        title: "Cila është pagesa minimale paradhënie?",
+        answer: "Ndërsa shumë transaksione kërkojnë një pagesë paradhënie prej 10-20%, ne ofrojmë struktura të personalizuara. Në disa raste, blerësit shumë të kualifikuar mund të kualifikohen për opsione pa pagesë paradhënie."
       },
       {
         id: 9,
-        title: "Can I pay early without penalty?",
-        answer: "The majority of our premium automotive loans simple-interest loans with no prepayment penalties. We will ensure this is explicitly cleared up before any agreements are signed."
+        title: "A mund të paguaj para afatit pa gjobë?",
+        answer: "Shumica e kredive tona premium automobilistike janë kredi me interes të thjeshtë pa gjoba për shlyerje të parakohshme. Ne do të sigurohemi që kjo të qartësohet para nënshkrimit të çdo marrëveshjeje."
       },
       {
         id: 10,
-        title: "Do you work with my bank or credit union?",
-        answer: "Yes, we are happy to work directly with your preferred bank, wealth manager, or credit union. We will coordinate directly with them to handle the final paperwork and funding."
+        title: "A punoni me bankën ose unionin tim të kreditit?",
+        answer: "Po, ne jemi të lumtur të punojmë drejtpërdrejt me bankën, menaxherin e pasurisë ose unionin tuaj të kreditit. Ne do të koordinohemi drejtpërdrejt me ta për të trajtuar dokumentacionin përfundimtar dhe financimin."
       }
     ]
   },
   {
     id: "shipping-delivery",
-    name: "Shipping & Delivery",
+    name: "Transporti dhe Dorëzimi",
     items: [
       {
         id: 11,
-        title: "Do you deliver internationally?",
-        answer: "Yes, we offer white-glove international shipping services. We coordinate with elite customs brokers and specialized global transport networks to secure safe delivery worldwide."
+        title: "A bëni dërgesa ndërkombëtare?",
+        answer: "Po, ne ofrojmë shërbime ndërkombëtare transporti me standard të lartë. Ne koordinohemi me ndërmjetësues elitarë doganor dhe rrjete të specializuara globale transporti për të siguruar dorëzim të sigurt në mbarë botën."
       },
       {
         id: 12,
-        title: "How much does shipping cost?",
-        answer: "Shipping costs vary based on the destination, shipping method (enclosed transport, air freight, ocean freight), and vehicle size. Domestic enclosed shipping typically starts around $1,500, while international quotes are provided upon request."
+        title: "Sa kushton transporti?",
+        answer: "Kostot e transportit ndryshojnë në bazë të destinacionit, metodës së transportit (transport i mbyllur, ajror, detar) dhe madhësisë së automjetit. Transporti vendor i mbyllur zakonisht fillon rreth $1,500, ndërsa kuotat ndërkombëtare ofrohen me kërkesë."
       },
       {
         id: 13,
-        title: "How long is delivery?",
-        answer: "Domestic delivery typically takes between 3 to 10 business days depending on distance and transport scheduling. Custom international deliveries take an average of 4-8 weeks."
+        title: "Sa zgjat dorëzimi?",
+        answer: "Dorëzimi vendor zakonisht zgjat 3 deri në 10 ditë pune në varësi të distancës dhe planifikimit të transportit. Dorëzimet ndërkombëtare të personalizuara marrin mesatarisht 4-8 javë."
       },
       {
         id: 14,
-        title: "Can you deliver to my home address?",
-        answer: "Yes, our enclosed transport carriers provide door-to-door, white-glove service straight to your driveway, garage, or designated facility."
+        title: "A mund të dërgoni në adresën time të shtëpisë?",
+        answer: "Po, transportuesit tanë të mbyllur ofrojnë shërbim derë më derë, direkt në rrugën tuaj, garazh ose objektin e caktuar."
       },
       {
         id: 15,
-        title: "Do you provide shipping insurance?",
-        answer: "All vehicles shipped through our logistics network are fully insured end-to-end for their full purchase value during transit."
+        title: "A ofroni sigurim transporti?",
+        answer: "Të gjitha automjetet e dërguara përmes rrjetit tonë logjistik janë të siguruara plotësisht për vlerën e tyre të plotë të blerjes gjatë tranzitit."
       }
     ]
   },
   {
     id: "warranty-support",
-    name: "Warranty & Support",
+    name: "Garancia dhe Mbështetja",
     items: [
       {
         id: 16,
-        title: "What warranties are included?",
-        answer: "Most of our vehicles still carry the remainder of their original factory warranties. For vehicles out of warranty, we offer comprehensive extended service contracts from top-tier providers."
+        title: "Çfarë garancish përfshihen?",
+        answer: "Shumica e automjeteve tona mbajnë pjesën e mbetur të garancive të tyre origjinale të fabrikës. Për automjetet jashtë garancisë, ne ofrojmë kontrata të zgjeruara shërbimi nga ofrues të nivelit të lartë."
       },
       {
         id: 17,
-        title: "Where can I service my vehicle?",
-        answer: "You can service your vehicle at any authorized, certified dealership for your brand worldwide. If purchased with an extended warranty, you may also use any ASE-certified luxury mechanic."
+        title: "Ku mund ta servisoj automjetin tim?",
+        answer: "Ju mund ta servisoni automjetin tuaj në çdo përfaqësi të autorizuar dhe të certifikuar për markën tuaj në mbarë botën. Nëse blihet me garanci të zgjeruar, mund të përdorni gjithashtu çdo mekanik luksoz të certifikuar."
       },
       {
         id: 18,
-        title: "Do you provide post-purchase support?",
-        answer: "Absolutely. When you buy from Threads Studio, you gain a lifetime Concierge contact who can assist with scheduling maintenance, future transport, specialized detailing, and future acquisitions."
+        title: "A ofroni mbështetje pas blerjes?",
+        answer: "Absolutisht. Kur blini nga CarFromKorea, fitoni një kontakt të përjetshëm të shërbimit që mund të ndihmojë me planifikimin e mirëmbajtjes, transportin e ardhshëm, detajimin e specializuar dhe blerjet e ardhshme."
       },
       {
         id: 19,
-        title: "Are the vehicles inspected?",
-        answer: "Every vehicle in our inventory undergoes a rigorous 150-point mechanical, electrical, and cosmetic inspection by certified master technicians prior to being listed."
+        title: "A janë të inspektuara automjetet?",
+        answer: "Çdo automjet në inventarin tonë i nënshtrohet një inspektimi rigoroz 150-pikësh mekanik, elektrik dhe estetik nga teknikë të certifikuar master përpara se të listohet."
       },
       {
         id: 20,
-        title: "Can I get a copy of the vehicle history?",
-        answer: "Yes, a complimentary, complete Carfax/AutoCheck history report and our internal condition report are provided alongside every vehicle."
+        title: "A mund të marr një kopje të historisë së automjetit?",
+        answer: "Po, një raport historie Carfax/AutoCheck plotësues dhe falas, së bashku me raportin tonë të brendshëm të gjendjes, ofrohen krahas çdo automjeti."
       }
     ]
   }
@@ -144,10 +144,10 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Frequently Asked Questions
+            Pyetjet e Bëra Më Shpesh
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Everything you need to know about purchasing, financing, and shipping your next luxury vehicle with Threads Studio.
+            Gjithçka që duhet të dini për blerjen, financimin dhe transportin e automjetit tuaj të ardhshëm luksoz me CarFromKorea.
           </p>
         </div>
 
@@ -159,13 +159,13 @@ export default function FAQSection() {
         
         <div className="mt-12 text-center border-t border-[#2A2E34] pt-12">
           <p className="text-gray-400 mb-6">
-            Can't find the answer you're looking for?
+            Nuk e gjeni përgjigjen që kërkoni?
           </p>
           <a 
             href="/contact" 
             className="inline-flex items-center justify-center px-8 py-3 border border-[#3A4569] text-white rounded-md bg-[#3A4569]/10 hover:bg-[#3A4569]/20 transition-colors duration-300 font-medium"
           >
-            Contact Our Concierge
+            Kontaktoni Shërbimin Tonë
           </a>
         </div>
       </div>

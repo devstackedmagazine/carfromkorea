@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import Link from "next/link"; 
+import Link from "next/link";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost" | "luxe";
 type ButtonSize = "sm" | "md" | "lg";
@@ -39,8 +39,7 @@ export default function Button({
       "bg-red-active text-white hover:opacity-90 hover:bg-red-active-hover",
     secondary:
       "bg-foreground text-white hover:bg-gray-700 focus-visible:ring-gray-400",
-    outline:
-      "border-2 border-red-active bg-transparent hover:text-background",
+    outline: "border-2 border-red-active bg-transparent hover:text-background",
     ghost: "bg-transparent text-white hover:bg-white/10",
     luxe: "bg-[#86e2b4] text-black font-semibold hover:opacity-90 rounded-none",
   };
@@ -78,7 +77,7 @@ export default function Button({
               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
             />
           </svg>
-          Loading...
+          Duke u ngarkuar...
         </>
       ) : (
         <>

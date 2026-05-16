@@ -5,11 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/features", label: "Features" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Ballina" },
+  { href: "/about", label: "Rreth Nesh" },
+  { href: "/features", label: "Karakteristikat" },
+  { href: "/pricing", label: "Çmimet" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 export default function MobileMenu() {

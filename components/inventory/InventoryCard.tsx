@@ -131,10 +131,10 @@ export default function InventoryCard({
           {/* Action Buttons */}
           <div className="flex gap-4">
             <button className="flex-1 px-4 py-3 bg-[#1B5E3F] text-white text-xs font-bold uppercase tracking-wider rounded-[4px] hover:opacity-90 transition-all text-center">
-              VIEW DETAILS
+              SHIKO DETAJET
             </button>
             <button className="flex-1 px-4 py-3 bg-white text-black text-xs font-bold uppercase tracking-wider rounded-[4px] hover:bg-gray-200 transition-all text-center">
-              COMPARE
+              KRAHASO
             </button>
           </div>
         </div>
@@ -177,19 +177,19 @@ export default function InventoryCard({
           {/* Specs */}
           <div className="flex flex-wrap gap-6 text-sm mt-3">
             <div>
-              <span className="text-gray-500">Fuel:</span>
+              <span className="text-gray-500">Karburanti:</span>
               <span className="text-white ml-2">{car.fuelType}</span>
             </div>
             <div>
-              <span className="text-gray-500">Mileage:</span>
+              <span className="text-gray-500">Kilometrazhi:</span>
               <span className="text-white ml-2">{formattedMileage} mi</span>
             </div>
             <div>
-              <span className="text-gray-500">Transmission:</span>
+              <span className="text-gray-500">Transmisioni:</span>
               <span className="text-white ml-2">{car.transmission}</span>
             </div>
             <div>
-              <span className="text-gray-500">Color:</span>
+              <span className="text-gray-500">Ngjyra:</span>
               <span className="text-white ml-2">{car.color}</span>
             </div>
           </div>
@@ -202,10 +202,10 @@ export default function InventoryCard({
           </span>
           <div className="flex gap-3">
             <button className="px-6 py-2 bg-bright-emerald text-deep-dark-blue font-semibold rounded-lg hover:bg-bright-emerald/90 transition-all">
-              VIEW DETAILS
+              SHIKO DETAJET
             </button>
             <button className="px-6 py-2 bg-white text-deep-dark-blue font-semibold rounded-lg hover:bg-gray-200 transition-all">
-              COMPARE
+              KRAHASO
             </button>
           </div>
         </div>

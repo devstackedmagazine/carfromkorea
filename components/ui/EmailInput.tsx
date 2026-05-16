@@ -40,7 +40,7 @@ export default function Page({ className }: { className: string }) {
             setEmail(e.target.value);
             if (error) setError(false);
           }}
-          placeholder="Enter your email"
+          placeholder="Shkruani email-in tuaj"
           className="w-full bg-transparent px-4 py-2 text-white focus:outline-none"
         />
         <Button
@@ -52,7 +52,7 @@ export default function Page({ className }: { className: string }) {
         </Button>
       </div>
       {error && (
-        <p className="text-red-500 text-xs ml-4">Please enter a valid email.</p>
+        <p className="text-red-500 text-xs ml-4">Ju lutem shkruani një email të vlefshëm.</p>
       )}
     </div>
   );

@@ -6,10 +6,10 @@ interface SortDropdownProps {
 }
 
 const sortOptions: { value: SortOption; label: string }[] = [
-  { value: 'newest', label: 'Newest First' },
-  { value: 'price-low', label: 'Price: Low to High' },
-  { value: 'price-high', label: 'Price: High to Low' },
-  { value: 'mileage-low', label: 'Lowest Mileage' },
+  { value: 'newest', label: 'Më të Rejat' },
+  { value: 'price-low', label: 'Çmimi: Nga më i ulëti' },
+  { value: 'price-high', label: 'Çmimi: Nga më i larti' },
+  { value: 'mileage-low', label: 'Kilometrazhi më i ulët' },
 ];
 
 export default function SortDropdown({
@@ -25,7 +25,7 @@ export default function SortDropdown({
       >
         {sortOptions.map((option) => (
           <option key={option.value} value={option.value} className="bg-deep-dark-blue">
-            Sort By: {option.label}
+            Rendit: {option.label}
           </option>
         ))}
       </select>

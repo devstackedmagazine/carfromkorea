@@ -20,11 +20,11 @@ export default function CTASection() {
 
           <div className="relative z-10 text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-soft-blue">
-              Ready to Get Started?
+              Gati për të Filluar?
             </h2>
             <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto leading-relaxed text-soft-blue">
-              Schedule a private consultation or browse our current inventory to
-              begin your Threads Studio experience.
+              Planifikoni një konsultim privat ose shfletoni inventarin tonë për të
+              filluar përvojën tuaj me CarFromKorea.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -33,7 +33,7 @@ export default function CTASection() {
                   className="hover:shadow-lg hover:scale-105 active:scale-95 bg-light-emerald text-charcoal-gray"
                   variant="luxe"
                 >
-                  View Inventory
+                  Shiko Inventarin
                 </Button>
               </Link>
 
@@ -42,7 +42,7 @@ export default function CTASection() {
                   className="border-soft-blue text-soft-blue hover:shadow-lg hover:scale-105 hover:bg-soft-blue/30 hover:text-white"
                   variant="outline"
                 >
-                  FAQ Answers
+                  Përgjigjet e FAQ
                 </Button>
               </Link>
             </div>

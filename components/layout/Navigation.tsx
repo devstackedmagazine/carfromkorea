@@ -7,11 +7,11 @@ import { Menu, X } from "lucide-react";
 import Button from "../ui/Button";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "Ballina" },
+  { href: "/about", label: "Rreth Nesh" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-  { href: "/tax-calculator", label: "Tax Calculator" },
+  { href: "/contact", label: "Kontakt" },
+  { href: "/tax-calculator", label: "Kalkulatori i Taksave" },
 ];
 
 export default function Navigation({ className }: { className?: string }) {
@@ -67,7 +67,7 @@ export default function Navigation({ className }: { className?: string }) {
         ))}
         <Link href="/inventory">
           <Button variant="luxe" size="md">
-            Explore Collection
+            Shiko Koleksionin
           </Button>
         </Link>
       </div>

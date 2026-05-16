@@ -8,7 +8,7 @@ interface BrandFilterProps {
 
 export default function BrandFilter({ value, onChange }: BrandFilterProps) {
   const brands = [
-    { label: "All Brands", value: "All Brands" },
+    { label: "Të Gjitha Markat", value: "All Brands" },
     { label: "BMW", value: "BMW" },
     { label: "Mercedes-Benz", value: "Mercedes-Benz" },
     { label: "Audi", value: "Audi" },
@@ -36,13 +36,13 @@ export default function BrandFilter({ value, onChange }: BrandFilterProps) {
           <path d="M9 15h6" />
           <path d="M9 11h6" />
         </svg>
-        CAR BRAND
+        MARKA E MAKINËS
       </label>
       <Dropdown
         options={brands}
         value={value}
         onChange={onChange}
-        placeholder="Select brand"
+        placeholder="Zgjidh markën"
       />
     </div>
   );
