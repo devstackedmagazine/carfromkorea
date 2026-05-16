@@ -12,7 +12,6 @@ import {
   Phone,
   MapPin,
   Clock,
-  ArrowRight,
   CreditCard,
 } from "lucide-react";
 
@@ -151,7 +150,7 @@ export default function Footer() {
           {/* Column 1: About */}
           <motion.div variants={fadeUpVariants}>
             <h2 className="text-off-white text-2xl font-bold tracking-tight">
-              Threads Studio
+              CARFROMKOREA
             </h2>
             <p className="text-off-white/70 text-sm mt-3 leading-relaxed">
               Premium automotive masterpieces for the discerning collector
@@ -197,11 +196,11 @@ export default function Footer() {
                 <li className="flex items-center gap-3">
                   <Mail size={16} className="text-rich-green shrink-0" />
                   <a
-                    href="mailto:hello@threadsstudio.com"
-                    aria-label="Email us at hello@threadsstudio.com"
+                    href="mailto:hello@carfromkorea.com"
+                    aria-label="Email us at hello@carfromkorea.com"
                     className="hover:text-bright-emerald transition-colors duration-300"
                   >
-                    hello@threadsstudio.com
+                    hello@carfromkorea.com
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -226,7 +225,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-off-white/50">
-          <p>&copy; 2024 Threads Studio. All rights reserved.</p>
+          <p>&copy; 2024 CarFromKorea. All rights reserved.</p>
           <nav aria-label="Legal links" className="flex items-center gap-4">
             {legalLinks.map((link, i) => (
               <span key={link.href} className="flex items-center gap-4">

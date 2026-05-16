@@ -9,8 +9,11 @@
   --color-light-gray: #e8e9eb;
   --color-bright-emerald: #2dd4bf;
   --color-charcoal-gray: #1f2937;
-  --color-background: #1e1e1e;
+  --color-dark-gray: #1e1e1e;
+  --color-background: #0C0F10;
   --color-light-emerald: #93d5ae;
+  --color-muted-blue: #3A4569;
+  --color-soft-blue: #A9B4DD;
 }
 
 html {

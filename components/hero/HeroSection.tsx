@@ -8,6 +8,10 @@ import HeroFilters from './HeroFilters';
 export default function HeroSection() {
   const [filters, setFilters] = useState({
     brand: 'All Brands',
+    model: '',
+    yearMin: 2010,
+    yearMax: new Date().getFullYear(),
+    mileageMax: 100000,
     priceMin: 40000,
     priceMax: 250000,
     engineType: 'electric',
@@ -20,6 +24,10 @@ export default function HeroSection() {
   const handleResetFilters = () => {
     setFilters({
       brand: 'All Brands',
+      model: '',
+      yearMin: 2010,
+      yearMax: new Date().getFullYear(),
+      mileageMax: 100000,
       priceMin: 40000,
       priceMax: 250000,
       engineType: 'electric',
@@ -27,7 +35,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-br from-[#0a1122] via-[#0f1d3c] to-[#12422c] min-h-[90vh] overflow-hidden flex flex-col">
+    <section className="relative w-full bg-gradient-to-br from-[#0a1122] via-[#0f1d3c] to-[#12422c] min-h-[90vh] flex flex-col z-20">
       {/* Texture pattern optional */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")'}}></div>
       
