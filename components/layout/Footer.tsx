@@ -159,7 +159,7 @@ export default function Footer() {
                 Vepra arti premium automobilistike për koleksionistin e dalluar
               </p>
               <p className="text-off-white/50 text-xs mt-2 font-medium">
-                Est. 1984
+                Est. 2015
               </p>
               <div
                 className="flex items-center gap-4 mt-5"
@@ -196,26 +196,26 @@ export default function Footer() {
                   <li className="flex items-center gap-3">
                     <Phone size={16} className="text-rich-green shrink-0" />
                     <a
-                      href="tel:+15551234567"
-                      aria-label="Call us at +1 (555) 123-4567"
+                      href="tel:+38343932374"
+                      aria-label="Call us at +383 43 932 374"
                       className="hover:text-bright-emerald transition-colors duration-300"
                     >
-                      +1 (555) 123-4567
+                      +383 43 932 374
                     </a>
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail size={16} className="text-rich-green shrink-0" />
                     <a
-                      href="mailto:hello@carfromkorea.com"
-                      aria-label="Email us at hello@carfromkorea.com"
+                      href="mailto:info@carfromkorea.com"
+                      aria-label="Email us at info@carfromkorea.com"
                       className="hover:text-bright-emerald transition-colors duration-300"
                     >
-                      hello@carfromkorea.com
+                      info@carfromkorea.com
                     </a>
                   </li>
                   <li className="flex items-center gap-3">
                     <MapPin size={16} className="text-rich-green shrink-0" />
-                    <span>123 Rruga Luksoze, Seul, Kore</span>
+                    <span>1 Nëna Terezë, Fushë-Kosovë 12000</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Clock
@@ -239,7 +239,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10">
           <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-off-white/50">
-            <p>&copy; 2024 CarFromKorea. Të gjitha të drejtat e rezervuara.</p>
+            <p>&copy; 2026 CarFromKorea. Të gjitha të drejtat e rezervuara.</p>
             <nav aria-label="Legal links" className="flex items-center gap-4">
               {legalLinks.map((link, i) => (
                 <span key={link.href} className="flex items-center gap-4">
