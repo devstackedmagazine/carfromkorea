@@ -1,19 +1,14 @@
 "use client";
 
+import Image from "next/image";
+import { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import {
-  ExternalLink,
-  MessageCircle,
-  Camera,
-  X,
-  Mail,
-  Phone,
-  MapPin,
-  Clock,
-  CreditCard,
-} from "lucide-react";
+import { Mail, MapPin, Clock, CreditCard, Phone } from "lucide-react";
+import instagram from "../../public/icons/instagram.svg";
+import facebook from "../../public/icons/facebook.svg";
+import whatsapp from "../../public/icons/whatsapp.svg";
 
 interface FooterLink {
   label: string;
@@ -23,7 +18,7 @@ interface FooterLink {
 interface SocialLink {
   label: string;
   href: string;
-  icon: typeof ExternalLink;
+  image: StaticImageData;
 }
 
 const quickLinks: FooterLink[] = [
@@ -43,10 +38,10 @@ const companyLinks: FooterLink[] = [
 ];
 
 const socialLinks: SocialLink[] = [
-  { label: "LinkedIn", href: "https://linkedin.com", icon: ExternalLink },
-  { label: "Facebook", href: "https://facebook.com", icon: MessageCircle },
-  { label: "Instagram", href: "https://instagram.com", icon: Camera },
-  { label: "Twitter", href: "https://twitter.com", icon: X },
+  { label: "LinkedIn", href: "https://linkedin.com", image: instagram },
+  { label: "Facebook", href: "https://facebook.com", image: facebook },
+  { label: "Instagram", href: "https://instagram.com", image: instagram },
+  { label: "Twitter", href: "https://twitter.com", image: whatsapp },
 ];
 
 const legalLinks: FooterLink[] = [
@@ -68,7 +63,7 @@ const fadeUpVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-function SocialIcon({ icon: Icon, label, href }: SocialLink) {
+function SocialIcon({ image, label, href }: SocialLink) {
   return (
     <Link
       href={href}
@@ -77,7 +72,7 @@ function SocialIcon({ icon: Icon, label, href }: SocialLink) {
       aria-label={`Visit us on ${label}`}
       className="text-off-white/70 hover:text-bright-emerald transition-colors duration-300"
     >
-      <Icon size={22} />
+      <Image src={image} alt={label} className="w-4 h-4" />
     </Link>
   );
 }
